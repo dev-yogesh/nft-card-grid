@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+.flipperContainer {
+  perspective: 1000px;
+  background-color: transparent;
+  position: relative;
+}
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* .flipperContainer:hover .flipper {
+  transform: rotateY(180deg);
+} */
+
+.frontCard,
+.backCard {
+  backface-visibility: hidden;
+}
+
+.backCard {
+  /* transform: rotateY(180deg); */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
